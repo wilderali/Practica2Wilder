@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% extends "base.html" %}
+
+    {% block content %}
+    <h2>Inscripción en Curso</h2>
+    <form method="POST">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="text" name="apellidos" placeholder="Apellidos" required>
+        <select name="curso" required>
+            <option value="">Selecciona un curso</option>
+            <option value="Emergentes II">Emergentes II</option>
+            <option value="Sistemas Geograficos">Sistemas Geograficos</option>
+            <option value="Ingenieria de Sistemas">Ingenieria de Sistemas</option>
+            <option value="Ingenieria Economica">Ingenieria Economica</option>
+            <option value="Ingenieria de Redes II">Ingenieria de Redes II</option>
+            <option value="Ingenieria de Software">Ingenieria de Software</option>
+        </select>
+        <button type="submit">Enviar</button>
+    </form>
+    {% endblock %}   
+</body>
+</html>
+
